@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock,Paper,Scissors</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Rock, Paper, Scissors</h2>
+    </div>
+    <div class="main">
+      <div class="player_side">
+        <div class="images">
+          <button onclick="get_input(event)" id="paper">
+            <img src="./images/paper.jpg" alt="" />
+          </button>
+          <button onclick="get_input(event)" id="rock">
+            <img src="./images/rock.jpg" alt="" />
+          </button>
+          <button onclick="get_input(event)" id="scissors">
+            <img src="./images/scissors.jpeg" alt="" />
+          </button>
+        </div>
+        <div class="you">
+          <h2>You</h2>
+        </div>
+      </div>
+      <div class="computer_side">
+        <img id="computer_move" />
+        <div class="computer">
+          <h2>Computer</h2>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1 id="result">Result</h1>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
